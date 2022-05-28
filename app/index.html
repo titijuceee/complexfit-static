@@ -18,10 +18,325 @@
   </head>
 
   <body>
-    <header></header>
+    <header class="site-header">
+      <div class="wrapper">
+        <div class="site-header__logo">
+          <img src="assets/images/icons/clear-view-escapes.svg" />
+        </div>
+
+        <div class="site-header__menu-icon">
+          <div class="site-header__menu-icon__middle"></div>
+        </div>
+
+        <div class="site-header__menu-content">
+          <div class="site-header__btn-container">
+            <a href="#" class="btn open-modal">Bejelentkezem</a>
+          </div>
+          <nav class="primary-nav primary-nav--pull-right">
+            <ul>
+              <li><a href="#rolunk" id="rolunk-link">Rólunk</a></li>
+              <li>
+                <a href="#szolgaltatasaink" id="szolgaltatasaink-link"
+                  >Szolgaltatásaink</a
+                >
+              </li>
+              <li><a href="#orarend" id="orarend-link">Órarend</a></li>
+              <li><a href="#galeria" id="galeria-link">Galéria</a></li>
+              <li><a href="#araink" id="araink-link">Áraink</a></li>
+              <li><a href="#kapcsolat" id="kapcsolat-link">Kapcsolat</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
     <main>
-      <h1>Static ComplexFit</h1>
+      <div class="large-hero">
+        <picture>
+          <source
+            srcset="
+              assets/images/hero--large.jpg        1920w,
+              assets/images/hero--large-hi-dpi.jpg 3840w
+            "
+            media="(min-width: 1380px)"
+          />
+          <source
+            srcset="
+              assets/images/hero--medium.jpg        1380w,
+              assets/images/hero--medium-hi-dpi.jpg 2760w
+            "
+            media="(min-width: 990px)"
+          />
+          <source
+            srcset="
+              assets/images/hero--small.jpg         990w,
+              assets/images/hero--small-hi-dpi.jpg 1980w
+            "
+            media="(min-width: 640px)"
+          />
+          <img
+            srcset="
+              assets/images/hero--smaller.jpg         640w,
+              assets/images/hero--smaller-hi-dpi.jpg 1280w
+            "
+            alt="Coastal view of ocean and mountains"
+            class="large-hero__image"
+          />
+        </picture>
+
+        <div class="large-hero__text-content">
+          <div class="wrapper">
+            <h1 class="large-hero__title">Legyél Te is ComplexFit!</h1>
+            <!-- <h2 class="large-hero__subtitle">Alcím jöhet ide</h2> -->
+            <!-- <p class="large-hero__description">rövid leírás jöhet még ide</p> -->
+            <p>
+              <a href="#" class="btn btn--large open-modal">Jelentkezz be!</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <section class="page-section" data-matching-link="#rolunk">
+        <div class="wrapper">
+          <h2 class="section-title">
+            Kik vagyunk,
+            <span class="section-title--red">miért épp ComplexFit?</span>
+          </h2>
+          <div class="generic-content-container">
+            <p>
+              Rengeteget gondolkoztunk, mi is lenne a megfelelő név, ami
+              jellemez minket, a termünket, a szolgáltatásainkat és a
+              céljainkat, amit adni szeretnénk Nektek. Egyben egyet értettünk:
+              egy COMPLEX szolgáltatási rendszert, hiszen minden egyes ember a
+              maga valójában, fizikálisan és mentálisan is egy COMPLEX,
+              összetett szerkezet.
+            </p>
+          </div>
+          <a href="#" class="btn btn--ghost open-modal">Olvass tovább!</a>
+        </div>
+      </section>
+
+      <section class="page-section" data-matching-link="#szolgaltatasaink">
+        <h2 class="section-title">
+          Gyere és <span class="section-title--black">eddz nálunk!</span>
+        </h2>
+        <div class="wrapper">
+          <div class="service__item">
+            <img class="service__img" />
+            <h3 class="service__title">Cross training</h3>
+          </div>
+          <div class="service__item">
+            <img class="service__img" />
+            <h3 class="service__title">Mobility</h3>
+          </div>
+          <div class="service__item">
+            <img class="service__img" />
+            <h3 class="service__title">Alakformáló</h3>
+          </div>
+          <div class="service__item">
+            <img class="service__img" />
+            <h3 class="service__title">Küzdősport</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-section" data-matching-link="#orarend">
+        <h2 class="section-title section-title--red">Órarend</h2>
+        <table class="schedule">
+          <thead>
+            <th></th>
+            <th>Hétfő</th>
+            <th>Kedd</th>
+            <th>Szerda</th>
+            <th>Csütörtök</th>
+            <th>Péntek</th>
+            <th>Szombat</th>
+            <th>Vasárnap</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>06:00-07:00</td>
+              <td>Cross training</td>
+              <td>Cross training</td>
+              <td></td>
+              <td>Cross training</td>
+              <td>Cross training</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>09:00-10:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>Cross training</td>
+              <td>Alakformáló</td>
+            </tr>
+            <tr>
+              <td>10:00-11:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td rowspan="2">
+                Mobility<br />10:00-11.00<br />&#8725;<br />Küzdősport<br />10:00-11:30
+              </td>
+              <td>Cross training</td>
+            </tr>
+            <tr>
+              <td>11:00-12:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>Cross training</td>
+            </tr>
+            <tr>
+              <td>17:00-18:00</td>
+              <td>Cross training</td>
+              <td>Cross training</td>
+              <td>Alakformáló</td>
+              <td>Cross training</td>
+              <td>Alakformáló</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>18:00-19:00</td>
+              <td>Cross training</td>
+              <td>Cross training</td>
+              <td>Cross training</td>
+              <td>Kempo aerobic</td>
+              <td>Cross training</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>19:00-20:00</td>
+              <td>Cross training</td>
+              <td rowspan="2">Küzdősport <br />19:00-20:30</td>
+              <td>Cross training/ <br />Mobility</td>
+              <td rowspan="2">Küzdősport <br />19:00-20:30</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>20:00-21:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="page-section" data-matching-link="#galeria">
+        <h2 class="section-title">
+          Nézz körül
+          <span class="section-title--red">Nálunk!</span>
+        </h2>
+        <div class="gallery-item"><img src="" alt="" /></div>
+        <div class="gallery-item"><img src="" alt="" /></div>
+        <div class="gallery-item"><img src="" alt="" /></div>
+        <div class="gallery-item"><img src="" alt="" /></div>
+        <div class="gallery-item"><img src="" alt="" /></div>
+        <div class="gallery-item"><img src="" alt="" /></div>
+        <div class="gallery-item"><img src="" alt="" /></div>
+        <div class="gallery-item"><img src="" alt="" /></div>
+      </section>
+
+      <section class="page-section" data-matching-link="#araink">
+        <div class="wrapper">
+          <div class="price-item">
+            <div class="price__name">Napijegy</div>
+            <div class="price__amount">2.900,- Ft</div>
+          </div>
+          <div class="price-item">
+            <div class="price__name">8 alkalmas bérlet (érvényes 30 napig)</div>
+            <div class="price__amount">19.200,- Ft (2.400,- Ft/alkalom)</div>
+          </div>
+          <div class="price-item">
+            <div class="price__name">
+              12 alkalmas bérlet (érvényes 30 napig)
+            </div>
+            <div class="price__amount">24.000,- Ft (2.000,- Ft/alkalom)</div>
+          </div>
+          <div class="price-item">
+            <div class="price__name">Korlátlan bérlet (érvényes 30 napig)</div>
+            <div class="price__amount">26.900,- Ft (1.345,- Ft/alkalom)</div>
+          </div>
+          <div class="price-item">
+            <div class="price__name">
+              Kiegészítő jegy (aznapi második edzéshez)
+            </div>
+            <div class="price__amount">1.500,- Ft</div>
+          </div>
+        </div>
+        <div class="discount">
+          <div class="discount__title">15% kedvezmény</div>
+          <div class="discount__details">
+            rendvédelmi/honvédelmi/diák/családi (min.3 fő)
+          </div>
+        </div>
+      </section>
+
+      <section class="page-section" data-matching-link="#kapcsolat">
+        <h2 class="section-title section-title--red">Kapcsolat</h2>
+        <div class="wrapper">
+          <div class="opening">
+            <h3 class="headline">Nyitvatartás</h3>
+            <div class="day">
+              <span>Héftő</span><span>6:00 - 7:30</span
+              ><span>17:00 - 21:00</span>
+            </div>
+            <div class="day">
+              <span>Kedd</span><span>6:00 - 7:30</span
+              ><span>17:00 - 21:00</span>
+            </div>
+            <div class="day">
+              <span>Szerda</span><span>6:00 - 7:30</span
+              ><span>17:00 - 21:00</span>
+            </div>
+            <div class="day">
+              <span>Csütörtök</span><span>6:00 - 7:30</span
+              ><span>17:00 - 21:00</span>
+            </div>
+            <div class="day">
+              <span>Péntek</span><span>6:00 - 7:30</span
+              ><span>17:00 - 21:00</span>
+            </div>
+            <div class="day">
+              <span>Szombat</span><span>9:00 - 12:00</span><span>Zárva</span>
+            </div>
+            <div class="day">
+              <span>Vasárnap</span><span>9:00 - 12:00</span><span>Zárva</span>
+            </div>
+          </div>
+          <div class="contact">
+            <address>1195 Budapest, Hofherr Albert utca 11.</address>
+            <a href="mailto:complexfithungary@gmail.com"
+              >complexfithungary@gmail.com</a
+            >
+            <span>FBicon</span
+            ><a href="http://facebook.com">ComplexFit Hungary</a>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="legal">
+        <a href="#">Impresszum</a><a href="#">ÁSZF</a
+        ><a href="#">Adatvédelmi tájékoztató</a>
+      </div>
+      <div class="madeby">
+        Proudly made by <a href="https://titijudit.com">TitiJuditDesign</a>
+      </div>
+    </footer>
   </body>
 </html>
