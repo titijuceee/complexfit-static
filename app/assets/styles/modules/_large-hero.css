@@ -1,0 +1,48 @@
+.large-hero {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  &__image {
+    grid-area: 1/1;
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+    & img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: rgba(25, 25, 25, 0.65);
+    }
+  }
+
+  &__text-content {
+    grid-area: 1/1;
+    align-self: center;
+    z-index: 1;
+  }
+
+  &__title {
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+    font-weight: 300;
+    margin: 0;
+    padding-bottom: 1rem;
+    font-size: 2.4rem;
+
+    @mixin atSmall {
+      font-size: 3.75rem;
+    }
+  }
+}

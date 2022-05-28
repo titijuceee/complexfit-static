@@ -21,18 +21,15 @@
     <header class="site-header">
       <div class="wrapper">
         <div class="site-header__logo">
-          <img src="assets/images/icons/clear-view-escapes.svg" />
+          <img src="assets/images/icons/Main_logo_white_2.svg" />
         </div>
 
         <div class="site-header__menu-icon">
-          <div class="site-header__menu-icon__middle"></div>
+          <span class="site-header__menu-icon__bar"></span>
         </div>
 
         <div class="site-header__menu-content">
-          <div class="site-header__btn-container">
-            <a href="#" class="btn open-modal">Bejelentkezem</a>
-          </div>
-          <nav class="primary-nav primary-nav--pull-right">
+          <nav class="primary-nav">
             <ul>
               <li><a href="#rolunk" id="rolunk-link">Rólunk</a></li>
               <li>
@@ -46,12 +43,15 @@
               <li><a href="#kapcsolat" id="kapcsolat-link">Kapcsolat</a></li>
             </ul>
           </nav>
+          <div class="site-header__btn-container">
+            <a href="#" class="btn open-modal">Bejelentkezem</a>
+          </div>
         </div>
       </div>
     </header>
     <main>
       <div class="large-hero">
-        <picture>
+        <!-- <picture>
           <source
             srcset="
               assets/images/hero--large.jpg        1920w,
@@ -78,14 +78,20 @@
               assets/images/hero--smaller.jpg         640w,
               assets/images/hero--smaller-hi-dpi.jpg 1280w
             "
-            alt="Coastal view of ocean and mountains"
+            alt="Girl in the gym"
             class="large-hero__image"
           />
-        </picture>
+        </picture> -->
+        <div class="large-hero__image">
+          <img src="assets/images/hero--large.jpg" alt="Girl in the Gym" />
+        </div>
 
         <div class="large-hero__text-content">
           <div class="wrapper">
-            <h1 class="large-hero__title">Legyél Te is ComplexFit!</h1>
+            <h1 class="large-hero__title">
+              Legyél Te is <br />
+              ComplexFit!
+            </h1>
             <!-- <h2 class="large-hero__subtitle">Alcím jöhet ide</h2> -->
             <!-- <p class="large-hero__description">rövid leírás jöhet még ide</p> -->
             <p>
@@ -96,7 +102,7 @@
       </div>
 
       <section class="page-section" data-matching-link="#rolunk">
-        <div class="wrapper">
+        <div class="wrapper wrapper--medium">
           <h2 class="section-title">
             Kik vagyunk,
             <span class="section-title--red">miért épp ComplexFit?</span>
@@ -111,7 +117,9 @@
               összetett szerkezet.
             </p>
           </div>
-          <a href="#" class="btn btn--ghost open-modal">Olvass tovább!</a>
+          <div class="btn-container">
+            <a href="#" class="btn btn--ghost open-modal">Olvass tovább!</a>
+          </div>
         </div>
       </section>
 
@@ -140,100 +148,102 @@
       </section>
 
       <section class="page-section" data-matching-link="#orarend">
-        <h2 class="section-title section-title--red">Órarend</h2>
-        <table class="schedule">
-          <thead>
-            <th></th>
-            <th>Hétfő</th>
-            <th>Kedd</th>
-            <th>Szerda</th>
-            <th>Csütörtök</th>
-            <th>Péntek</th>
-            <th>Szombat</th>
-            <th>Vasárnap</th>
-          </thead>
-          <tbody>
-            <tr>
-              <td>06:00-07:00</td>
-              <td>Cross training</td>
-              <td>Cross training</td>
-              <td></td>
-              <td>Cross training</td>
-              <td>Cross training</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>09:00-10:00</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td>Cross training</td>
-              <td>Alakformáló</td>
-            </tr>
-            <tr>
-              <td>10:00-11:00</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td rowspan="2">
-                Mobility<br />10:00-11.00<br />&#8725;<br />Küzdősport<br />10:00-11:30
-              </td>
-              <td>Cross training</td>
-            </tr>
-            <tr>
-              <td>11:00-12:00</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td>Cross training</td>
-            </tr>
-            <tr>
-              <td>17:00-18:00</td>
-              <td>Cross training</td>
-              <td>Cross training</td>
-              <td>Alakformáló</td>
-              <td>Cross training</td>
-              <td>Alakformáló</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>18:00-19:00</td>
-              <td>Cross training</td>
-              <td>Cross training</td>
-              <td>Cross training</td>
-              <td>Kempo aerobic</td>
-              <td>Cross training</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>19:00-20:00</td>
-              <td>Cross training</td>
-              <td rowspan="2">Küzdősport <br />19:00-20:30</td>
-              <td>Cross training/ <br />Mobility</td>
-              <td rowspan="2">Küzdősport <br />19:00-20:30</td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>20:00-21:00</td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="wrapper wrapper--centered">
+          <h2 class="section-title section-title--red">Órarend</h2>
+          <table class="schedule">
+            <thead>
+              <th></th>
+              <th>Hétfő</th>
+              <th>Kedd</th>
+              <th>Szerda</th>
+              <th>Csütörtök</th>
+              <th>Péntek</th>
+              <th>Szombat</th>
+              <th>Vasárnap</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>06:00-07:00</td>
+                <td>Cross training</td>
+                <td>Cross training</td>
+                <td></td>
+                <td>Cross training</td>
+                <td>Cross training</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>09:00-10:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Cross training</td>
+                <td>Alakformáló</td>
+              </tr>
+              <tr>
+                <td>10:00-11:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td rowspan="2">
+                  Mobility<br />10:00-11.00<br />&#8725;<br />Küzdősport<br />10:00-11:30
+                </td>
+                <td>Cross training</td>
+              </tr>
+              <tr>
+                <td>11:00-12:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Cross training</td>
+              </tr>
+              <tr>
+                <td>17:00-18:00</td>
+                <td>Cross training</td>
+                <td>Cross training</td>
+                <td>Alakformáló</td>
+                <td>Cross training</td>
+                <td>Alakformáló</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>18:00-19:00</td>
+                <td>Cross training</td>
+                <td>Cross training</td>
+                <td>Cross training</td>
+                <td>Kempo aerobic</td>
+                <td>Cross training</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>19:00-20:00</td>
+                <td>Cross training</td>
+                <td rowspan="2">Küzdősport <br />19:00-20:30</td>
+                <td>Cross training/ <br />Mobility</td>
+                <td rowspan="2">Küzdősport <br />19:00-20:30</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>20:00-21:00</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
 
       <section class="page-section" data-matching-link="#galeria">

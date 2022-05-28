@@ -4,11 +4,10 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
-  color: $mainRed;
-
-  @mixin atMedium {
-    color: $mainBlack;
-  }
+  font-weight: 300;
+  line-height: 1.5;
+  color: #fff;
+  background-color: $mainBlack;
 }
 
 img {
