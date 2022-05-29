@@ -5,6 +5,14 @@
     padding: 4.5rem 0 0;
   }
 
+  &--services {
+    padding: 5.5rem 0;
+
+    & .section-title {
+      grid-area: 1/1/2/1;
+    }
+  }
+
   .btn-container {
     text-align: center;
   }

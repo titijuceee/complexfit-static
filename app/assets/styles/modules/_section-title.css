@@ -10,4 +10,9 @@
   &--red {
     color: $mainRed;
   }
+
+  &--black {
+    color: $mainBlack;
+    font-weight: 400;
+  }
 }

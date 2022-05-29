@@ -9,6 +9,7 @@
   &--ghost {
     background-color: transparent;
     border: 1px solid $mainRed;
+    color: $mainRed;
   }
 
   &--large {
