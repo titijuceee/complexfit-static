@@ -158,91 +158,95 @@
       <section class="page-section" data-matching-link="#orarend">
         <div class="wrapper wrapper--centered">
           <h2 class="section-title section-title--red">Órarend</h2>
-          <table class="schedule">
+          <table class="schedule" summary="Órarend">
             <thead>
               <th></th>
-              <th>Hétfő</th>
-              <th>Kedd</th>
-              <th>Szerda</th>
-              <th>Csütörtök</th>
-              <th>Péntek</th>
-              <th>Szombat</th>
-              <th>Vasárnap</th>
+              <th scope="col">Hétfő</th>
+              <th scope="col">Kedd</th>
+              <th scope="col">Szerda</th>
+              <th scope="col">Csütörtök</th>
+              <th scope="col">Péntek</th>
+              <th scope="col">Szombat</th>
+              <th scope="col">Vasárnap</th>
             </thead>
             <tbody>
               <tr>
-                <td>06:00-07:00</td>
-                <td>Cross training</td>
-                <td>Cross training</td>
+                <th scope="row">06:00-07:00</th>
+                <td class="schedule--red">Cross training</td>
+                <td class="schedule--red">Cross training</td>
                 <td></td>
-                <td>Cross training</td>
-                <td>Cross training</td>
+                <td class="schedule--red">Cross training</td>
+                <td class="schedule--red">Cross training</td>
                 <td></td>
                 <td></td>
               </tr>
               <tr>
-                <td>09:00-10:00</td>
+                <th scope="row">09:00-10:00</th>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
-                <td>Cross training</td>
-                <td>Alakformáló</td>
+                <td class="schedule--red">Cross training</td>
+                <td class="schedule--white">Cross training</td>
               </tr>
               <tr>
-                <td>10:00-11:00</td>
+                <th scope="row">10:00-11:00</th>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
-                <td rowspan="2">
+                <td rowspan="2" class="schedule--gray">
                   Mobility<br />10:00-11.00<br />&#8725;<br />Küzdősport<br />10:00-11:30
                 </td>
-                <td>Cross training</td>
+                <td class="schedule--red">Cross training</td>
               </tr>
               <tr>
-                <td>11:00-12:00</td>
+                <th scope="row">11:00-12:00</th>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
-                <td>Cross training</td>
+                <td class="schedule--red">Cross training</td>
               </tr>
               <tr>
-                <td>17:00-18:00</td>
-                <td>Cross training</td>
-                <td>Cross training</td>
-                <td>Alakformáló</td>
-                <td>Cross training</td>
-                <td>Alakformáló</td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>18:00-19:00</td>
-                <td>Cross training</td>
-                <td>Cross training</td>
-                <td>Cross training</td>
-                <td>Kempo aerobic</td>
-                <td>Cross training</td>
+                <th scope="row">17:00-18:00</th>
+                <td class="schedule--red">Cross training</td>
+                <td class="schedule--red">Cross training</td>
+                <td class="schedule--white">Cross training</td>
+                <td class="schedule--red">Cross training</td>
+                <td class="schedule--white">Cross training</td>
                 <td></td>
                 <td></td>
               </tr>
               <tr>
-                <td>19:00-20:00</td>
-                <td>Cross training</td>
-                <td rowspan="2">Küzdősport <br />19:00-20:30</td>
-                <td>Cross training/ <br />Mobility</td>
-                <td rowspan="2">Küzdősport <br />19:00-20:30</td>
-                <td></td>
+                <th scope="row">18:00-19:00</th>
+                <td class="schedule--red">Cross training</td>
+                <td class="schedule--red">Cross training</td>
+                <td class="schedule--red">Cross training</td>
+                <td class="schedule--white">Kempo aerobic</td>
+                <td class="schedule--red">Cross training</td>
                 <td></td>
                 <td></td>
               </tr>
               <tr>
-                <td>20:00-21:00</td>
+                <th scope="row">19:00-20:00</th>
+                <td class="schedule--red">Cross training</td>
+                <td rowspan="2" class="schedule--gray">
+                  Küzdősport <br />19:00-20:30
+                </td>
+                <td class="schedule--red">Cross training/ <br />Mobility</td>
+                <td rowspan="2" class="schedule--gray">
+                  Küzdősport <br />19:00-20:30
+                </td>
+                <td class="schedule--red">Cross training/ <br />Mobility</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">20:00-21:00</th>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -254,19 +258,72 @@
         </div>
       </section>
 
-      <section class="page-section" data-matching-link="#galeria">
+      <section
+        class="page-section page-section--gallery"
+        data-matching-link="#galeria"
+      >
         <h2 class="section-title">
           Nézz körül
           <span class="section-title--red">Nálunk!</span>
         </h2>
-        <div class="gallery-item"><img src="" alt="" /></div>
-        <div class="gallery-item"><img src="" alt="" /></div>
-        <div class="gallery-item"><img src="" alt="" /></div>
-        <div class="gallery-item"><img src="" alt="" /></div>
-        <div class="gallery-item"><img src="" alt="" /></div>
-        <div class="gallery-item"><img src="" alt="" /></div>
-        <div class="gallery-item"><img src="" alt="" /></div>
-        <div class="gallery-item"><img src="" alt="" /></div>
+        <div class="wrapper--gallery">
+          <div class="gallery-item">
+            <img
+              src="assets/images/gallery-1.jpg"
+              alt=""
+              class="gallery-item__img"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="assets/images/gallery-2.jpg"
+              alt=""
+              class="gallery-item__img"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="assets/images/gallery-3.jpg"
+              alt=""
+              class="gallery-item__img"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="assets/images/gallery-4.jpg"
+              alt=""
+              class="gallery-item__img"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="assets/images/gallery-5.jpg"
+              alt=""
+              class="gallery-item__img"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="assets/images/gallery-6.jpg"
+              alt=""
+              class="gallery-item__img"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="assets/images/gallery-7.jpg"
+              alt=""
+              class="gallery-item__img"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="assets/images/gallery-8.jpg"
+              alt=""
+              class="gallery-item__img"
+            />
+          </div>
+        </div>
       </section>
 
       <section class="page-section" data-matching-link="#araink">

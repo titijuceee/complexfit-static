@@ -13,4 +13,14 @@
   &--centered {
     text-align: center;
   }
+
+  &--gallery {
+    width: 100%;
+    max-width: 100%;
+
+    @mixin atSmall {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
 }

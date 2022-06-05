@@ -1,0 +1,46 @@
+.schedule {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+
+  & thead,
+  & td {
+    border: 1px solid #414141;
+  }
+
+  & thead {
+    background-color: #333333;
+    margin-bottom: 20px;
+  }
+
+  & th {
+    width: 12.5%;
+    padding: 1rem 0;
+    font-weight: 300;
+  }
+
+  & tbody th {
+    border: 1px solid #414141;
+  }
+
+  & tbody tr:nth-child(odd) {
+    background-color: #262626;
+  }
+
+  & tbody tr:nth-child(even) {
+    background-color: #333333;
+  }
+
+  &--red {
+    background-color: $mainRed;
+  }
+
+  &--white {
+    background-color: #fff;
+    color: $mainBlack;
+  }
+
+  &--gray {
+    background-color: #646464;
+  }
+}
