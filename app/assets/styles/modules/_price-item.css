@@ -1,0 +1,30 @@
+.price-item {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  background-color: #333333;
+  margin-bottom: 1rem;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: -30px;
+    width: 30%;
+    height: 100%;
+    background-color: $mainRed;
+    z-index: 0;
+    transform: skewX(-40deg);
+  }
+
+  &__name {
+    padding: 1rem 1.5rem;
+  }
+
+  &__amount {
+    position: relative;
+    padding: 1rem 1.5rem;
+    text-align: right;
+  }
+}

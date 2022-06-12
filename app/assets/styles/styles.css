@@ -12,3 +12,5 @@
 @import "modules/_service";
 @import "modules/_schedule";
 @import "modules/_gallery-item";
+@import "modules/_price-item";
+@import "modules/_discount";
