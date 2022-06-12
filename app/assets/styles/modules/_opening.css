@@ -1,0 +1,9 @@
+.opening {
+  span {
+    text-align: center;
+
+    @mixin atMedium {
+      display: initial;
+    }
+  }
+}
