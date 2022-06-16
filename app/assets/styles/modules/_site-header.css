@@ -1,17 +1,112 @@
 .site-header {
   position: absolute;
   width: 100%;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem 0;
+  z-index: 2;
+  transition: background-color 0.3s ease-out;
+
+  &--is-expanded {
+    background-color: rgba(38, 38, 38, 0.55);
+  }
 
   &__logo {
     position: absolute;
     top: 0;
-    left: 0;
+    transition: transform 0.3s ease-out;
+    transform: scale(0.8);
+    transform-origin: 50% 0;
     z-index: 10;
-    width: 150px;
+    width: 250px;
+    padding: 1.5rem 0;
     @mixin atMedium {
-      width: 150px;
+      left: auto;
+      transform: translateX(0);
+    }
+  }
+
+  &__menu-content {
+    opacity: 0;
+    transform: scale(1.2);
+    transition: all 0.3s ease-out;
+    position: relative;
+    z-index: -10;
+    padding-top: 50px;
+    text-align: center;
+
+    @mixin atMedium {
+      opacity: 1;
+      z-index: 1;
+      padding-top: 0;
+      transform: scale(1);
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    &--is-visible {
+      opacity: 1;
+      z-index: 1;
+      transform: scale(1);
+    }
+  }
+
+  &__menu-icon {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 30px;
+    height: 20px;
+    z-index: 10;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+
+    @mixin atMedium {
+      display: none;
+    }
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #fff;
+      transition: all 0.3s ease-out;
+    }
+
+    &::after {
+      top: auto;
+      bottom: 0;
+    }
+
+    &__bar {
+      display: block;
+      position: absolute;
+      content: "";
+      top: 50%;
+      transform: translateY(-1px);
+      width: 100%;
+      height: 2px;
+      background-color: #fff;
+      transition: all 0.3s ease-out;
+    }
+  }
+
+  &__menu-icon--close-x {
+    &::before {
+      top: 50%;
+      transform: rotate(45deg) translateY(-1px);
+    }
+
+    .site-header__menu-icon__bar {
+      transform: scaleX(0);
+    }
+
+    &::after {
+      bottom: 50%;
+      transform: rotate(-45deg) translateY(1px) translateX(-1px);
     }
   }
 }
