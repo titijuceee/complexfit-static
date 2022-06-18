@@ -1,18 +1,14 @@
 .section-title {
-  font-size: 2.55rem;
+  font-size: 2rem;
   font-weight: 300;
   text-align: center;
+  margin: 2rem 0;
 
-  @mixin atSmall {
+  @mixin atMedium {
     font-size: 2.5rem;
   }
 
   &--red {
     color: $mainRed;
-  }
-
-  &--black {
-    color: $mainBlack;
-    font-weight: 400;
   }
 }

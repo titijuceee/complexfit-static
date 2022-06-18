@@ -12,13 +12,14 @@
   &__logo {
     position: absolute;
     top: 0;
+    left: 0;
     transition: transform 0.3s ease-out;
     transform: scale(0.8);
     transform-origin: 50% 0;
     z-index: 10;
     width: 250px;
     padding: 1.5rem 0;
-    @mixin atMedium {
+    @mixin atLarge {
       left: auto;
       transform: translateX(0);
     }
@@ -29,18 +30,18 @@
     transform: scale(1.2);
     transition: all 0.3s ease-out;
     position: relative;
-    z-index: -10;
     padding-top: 50px;
+    z-index: -10;
     text-align: center;
 
-    @mixin atMedium {
+    @mixin atLarge {
       opacity: 1;
-      z-index: 1;
-      padding-top: 0;
       transform: scale(1);
       display: flex;
       justify-content: flex-end;
       align-items: center;
+      padding-top: 0;
+      z-index: 1;
     }
 
     &--is-visible {
@@ -60,7 +61,7 @@
     cursor: pointer;
     transition: all 0.3s ease-out;
 
-    @mixin atMedium {
+    @mixin atLarge {
       display: none;
     }
 

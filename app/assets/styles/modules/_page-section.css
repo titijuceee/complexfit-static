@@ -6,7 +6,9 @@
   }
 
   &--services {
-    padding: 5.5rem 0;
+    @mixin atMedium {
+      padding: 5.5rem 0;
+    }
 
     & .section-title {
       grid-area: 1/1/2/1;
