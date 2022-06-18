@@ -2,7 +2,18 @@
   padding: 1rem 0;
   font-size: 14px;
 
+  &__legal {
+    margin-bottom: 1rem;
+    @mixin atSmall {
+      margin-bottom: 0;
+    }
+  }
+
   &__legal a {
     padding-right: 1rem;
+
+    @mixin atSmall {
+      margin-bottom: 0;
+    }
   }
 }

@@ -8,13 +8,11 @@
     padding-top: 66.67%;
   }
 
-  @mixin clearfix;
-
   @mixin atSmall {
     width: 50%;
   }
 
-  @mixin atMedium {
+  @mixin atLarge {
     width: 25%;
   }
 

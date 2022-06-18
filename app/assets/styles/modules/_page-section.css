@@ -6,7 +6,7 @@
   }
 
   &--services {
-    @mixin atMedium {
+    @mixin atLarge {
       padding: 5.5rem 0;
     }
 
