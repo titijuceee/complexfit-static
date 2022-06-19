@@ -38,12 +38,9 @@ let cssConfig = {
   ],
 };
 
-let pages = fse
-  .readdirSync("./app")
-  .filter(function (file) {
+let pages = fse.readdirSync("./app").filter(function (file) {
     return file.endsWith(".html");
-  })
-  .map(function (page) {
+  }).map(function (page) {
     return new HtmlWebpackPlugin({
       filename: page,
       template: `./app/${page}`,
