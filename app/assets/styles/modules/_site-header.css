@@ -9,6 +9,14 @@
     background-color: rgba(38, 38, 38, 0.55);
   }
 
+  @mixin atLarge {
+    position: fixed;
+
+    &--dark {
+      background-color: rgba(38, 38, 38, 0.85);
+    }
+  }
+
   &__logo {
     position: absolute;
     top: 0;
