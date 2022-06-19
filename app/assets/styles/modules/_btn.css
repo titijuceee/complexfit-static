@@ -12,6 +12,16 @@
     background-color: transparent;
     border: 1px solid $mainRed;
     color: $mainRed;
+
+    &:hover {
+      background-image: none!important;
+      border-color: rgb(150, 41, 43);
+      color: rgb(150, 41, 43);
+    }
+  }
+
+  &:hover {
+    background-image: linear-gradient($mainRed, rgb(90, 30, 11));
   }
 
   &--large {

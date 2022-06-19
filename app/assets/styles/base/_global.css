@@ -20,5 +20,6 @@ img {
 }
 
 a {
-  color: $mainRed;
+  color: #fff;
+  text-decoration: none;
 }

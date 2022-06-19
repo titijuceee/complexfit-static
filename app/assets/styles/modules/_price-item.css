@@ -3,8 +3,10 @@
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
-  background-color: #333333;
+  background-color: rgb(51, 51, 51);
   margin-bottom: 1rem;
+  border-radius: 3px;
+  box-shadow: 3px 6px rgba(51, 51, 51, .1);
   position: relative;
   z-index: 1;
 
